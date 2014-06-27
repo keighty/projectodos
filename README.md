@@ -14,3 +14,5 @@ I have tried a number of ways to keep track of my projects and todo lists, and n
 *[ ] Tasks should be displayed in two orders: the incomplete ones in ranked order at the top of the list, and the completed ones (in the order completed) at the bottom.
 
 *[ ] Multi-user
+
+*[ ] extend todo on completed to include date completed
