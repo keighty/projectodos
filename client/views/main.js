@@ -1,19 +1,3 @@
-if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to projectodos.";
-  };
-
-  Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+Handlebars.registerHelper('formatDate', function(date) {
+  return $.datepicker.formatDate('dd-M-yy', date);
+});
