@@ -20,7 +20,7 @@ if (Projects.find().count() === 0) {
 
   Todos.insert({
     project_id: learningProject_id,
-    description: "add sub-collection for adding sources/urls to learning page",
+    description: "add collection for adding sources/urls to learning page",
     submitted: now - 7 * 3600 * 1000,
     rank: "2",
     category: "story",
