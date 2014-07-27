@@ -5,3 +5,7 @@ Meteor.publish('projects', function() {
 Meteor.publish('project', function(id) {
   return Projects.find(id);
 });
+
+Meteor.publish('todos', function(projectId) {
+  return Todos.find({project_id: projectId});
+});
