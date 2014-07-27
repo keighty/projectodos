@@ -9,4 +9,11 @@
       {{/each}}
     </ul>
   </div>
+  <div class="alert alert-success add-todo">
+    {{#if addTodo}}
+      <input name="newTodo" type="text" placeholder="enter description" />
+    {{else}}
+      +
+    {{/if}}
+  </div>
 </template>
