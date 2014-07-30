@@ -7,13 +7,11 @@
       {{#each todos}}
         {{> todo}}
       {{/each}}
+      {{#if addTodo}}
+        <li><input id="newTodo" type="text" placeholder="enter description" /></li>
+      {{else}}
+        <li><button id="addTodo">&plus;</button></li>
+      {{/if}}
     </ul>
-  </div>
-  <div class="alert alert-success add-todo">
-    {{#if addTodo}}
-      <input name="newTodo" type="text" placeholder="enter description" />
-    {{else}}
-      +
-    {{/if}}
   </div>
 </template>
