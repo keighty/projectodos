@@ -2,4 +2,9 @@
   {{#each projects}}
     {{> projectListItem}}
   {{/each}}
+  {{#if addProject}}
+    <input id="newProject" type="text" placeholder="enter description" />
+  {{else}}
+    <button class="btn btn-primary" id="addProject">&plus; Project</button>
+  {{/if}}
 </template>
