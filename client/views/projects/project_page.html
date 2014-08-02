@@ -3,15 +3,13 @@
     <h4>{{project.title}}</h4>
   </div>
   <div>
-    <ul>
       {{#each todos}}
         {{> todo}}
       {{/each}}
       {{#if addTodo}}
-        <li><input id="newTodo" type="text" placeholder="enter description" /></li>
+        <div><input id="newTodo" type="text" placeholder="enter description" /></div>
       {{else}}
-        <li><button id="addTodo">&plus;</button></li>
+        <div><button id="addTodo">&plus;</button></div>
       {{/if}}
-    </ul>
   </div>
 </template>

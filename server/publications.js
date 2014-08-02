@@ -7,5 +7,5 @@ Meteor.publish('project', function(id) {
 });
 
 Meteor.publish('todos', function(projectId) {
-  return Todos.find({project_id: projectId});
+  return Todos.find({project_id: projectId}, {sort: {date_completed: 1}});
 });

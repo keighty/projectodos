@@ -1,1 +1,7 @@
-/* CSS declarations go here */
+.check-label {
+  font-weight: normal;
+}
+
+.check:checked + .check-label {
+  text-decoration:line-through;
+}
