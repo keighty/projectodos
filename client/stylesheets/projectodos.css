@@ -1,3 +1,7 @@
+body {
+  background: url("/images/polaroid.png");
+}
+
 .check-label {
   font-weight: normal;
 }
